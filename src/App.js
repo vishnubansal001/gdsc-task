@@ -464,8 +464,8 @@ function App() {
               <div className="flex lg:flex-row flex-col justify-center items-center w-[90%] mx-auto text-white uppercase lg:pt-10">
                 <div className="flex flex-col font-semibold gap-3 z-[1] lg:mb-0 mb-8">
                   <div className="flex flex-col gap-3">
-                    <h1 className="lg:text-7xl text-5xl">mechbots</h1>
-                    <h1 className="lg:text-7xl text-5xl">student chapter</h1>
+                    <h1 className="lg:text-6xl text-5xl">mechbots</h1>
+                    <h1 className="lg:text-6xl text-5xl">student chapter</h1>
                   </div>
                   <div>
                     <h1 className="lg:text-2xl text-xl">
