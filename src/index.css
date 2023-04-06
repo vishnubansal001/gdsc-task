@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap');
 
 body{
   @apply bg-[#08051F];
@@ -97,5 +99,16 @@ body{
 .social:hover{
   transform: scale(1.25);
   transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  font-family: 'Abril Fatface', cursive;
+}
+
+.img:hover{
   cursor: pointer;
 }

@@ -226,17 +226,17 @@ function App() {
                 </div>
                 <div className="flex gap-4 archive">
                   <div className="flex lg:flex-col gap-5">
-                    <img src={advocate} alt="img/advocate.svg" />
-                    <img src={kid} alt="img/kid.svg" />
-                    <img src={stream} alt="img/stream.svg" />
+                    <img src={advocate} alt="img/advocate.svg" className="img" />
+                    <img src={kid} alt="img/kid.svg" className="img" />
+                    <img src={stream} alt="img/stream.svg" className="img" />
                   </div>
                   <div className="flex lg:flex-col gap-6">
-                    <img src={gaming} alt="img/gaming.svg" />
-                    <img src={lab} alt="img/lab.svg" />
+                    <img src={gaming} alt="img/gaming.svg" className="img" />
+                    <img src={lab} alt="img/lab.svg" className="img" />
                   </div>
                   <div className="flex lg:flex-col gap-4">
-                    <img src={laptop} alt="img/laptop.svg" />
-                    <img src={hand} alt="ing/hand.svg" />
+                    <img src={laptop} alt="img/laptop.svg" className="img" />
+                    <img src={hand} alt="ing/hand.svg" className="img" />
                   </div>
                 </div>
                 {/* Swiper Slide For the Responsive Part of the images of the Archive section */}
@@ -381,16 +381,16 @@ function App() {
                     <div className="border-l border-l-[1px_solid_white] lg:ml-[-1rem]"></div>
                     <div className="flex md:flex-row flex-col justify-center gap-4">
                       <div className="flex flex-col gap-8">
-                        <img src={kid} alt="img/kid.svg" />
+                        <img src={kid} alt="img/kid.svg" className="img" />
                         <div className="border btn border-[10px_solid_white] px-[24px] py-[10px] cursor-pointer mx-auto">
                           <button className=" uppercase lg:text-md text-xl">
                             ai always win
                           </button>
                         </div>
-                        <img src={yellow} alt="img/yellow.svg" />
+                        <img src={yellow} alt="img/yellow.svg" className="img" />
                       </div>
                       <div>
-                        <img src={meditation} alt="img/meditation.svg" />
+                        <img src={meditation} alt="img/meditation.svg" className="img" />
                       </div>
                     </div>
                   </div>
@@ -432,7 +432,7 @@ function App() {
                         <img
                           src={advocate}
                           alt="img/kid.svg"
-                          // className="lg:w-auto lg:h-auto w-[26rem]"
+                          className="img"
                         />
                         <div className="border btn border-[10px_solid_white] px-[24px] py-[10px] cursor-pointer mx-auto">
                           <button className="uppercase lg:text-md text-xl">
@@ -442,14 +442,14 @@ function App() {
                         <img
                           src={robotics}
                           alt="img/.svg"
-                          // className="lg:w-auto lg:h-auto w-[26rem]"
+                          className="img"
                         />
                       </div>
                       <div>
                         <img
                           src={mechanics}
                           alt="img/meditation.svg"
-                          // className="lg:w-auto lg:h-auto w-[26rem]"
+                          className="img"
                         />
                       </div>
                     </div>
