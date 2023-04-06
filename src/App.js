@@ -27,7 +27,7 @@ import "swiper/css/bundle";
 import { useState } from "react";
 import { gsap, TweenMax } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 // gsap.registerPlugin(ScrollTrigger);
 function App() {
@@ -56,47 +56,33 @@ function App() {
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
                       {/* <HashLink to="#landing-page"> */}
-                      <a href="#landing-page">
-
-                        home
-                      </a>
+                      <a href="#landing-page">home</a>
                       {/* </HashLink> */}
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                    <a href="#about-us">
-                      about us
-                      </a>
-                    </div>
-
-                  </div>
-                  <div className="">
-                    <div className="mb-1 cursor-pointer select-none hover:text-white">
-                    <a href="#archive">
-                      archive
-                      </a>
+                      <a href="#about-us">about us</a>
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                    <a href="#achievements">
-                      achievements
-                      </a>
+                      <a href="#archive">archive</a>
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                    <a href="#events">
-                      events
-                      </a>
+                      <a href="#achievements">achievements</a>
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                    <a href="#contact-us">
-                      contact us
-                      </a>
+                      <a href="#events">events</a>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="mb-1 cursor-pointer select-none hover:text-white">
+                      <a href="#contact-us">contact us</a>
                     </div>
                   </div>
                 </div>
@@ -137,12 +123,24 @@ function App() {
           }`}
         >
           <ul className=" flex items-start flex-col gap-3">
-            <li>home</li>
-            <li>about us</li>
-            <li>archive</li>
-            <li>achievements</li>
-            <li>events</li>
-            <li>contact us</li>
+            <li>
+              <a href="#landing-page">home</a>
+            </li>
+            <li>
+              <a href="#about-us">about us</a>
+            </li>
+            <li>
+              <a href="#archive">archive</a>
+            </li>
+            <li>
+              <a href="#achievements">achievements</a>
+            </li>
+            <li>
+              <a href="#events">events</a>
+            </li>
+            <li>
+              <a href="#contact-us">contact us</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -153,7 +151,10 @@ function App() {
         <div>
           <div className="lg:flex relative lg:flex-row wrapper">
             {/* Landing Page */}
-            <div id="landing-page" className="child min-w-[100%] lg:mt-4 text-white lg:overflow-hidden lg:h-[97vh] flex justify-center flex-col items-center bg-[#08051F] lg:relative pt-10">
+            <div
+              id="landing-page"
+              className="child min-w-[100%] lg:mt-4 text-white lg:overflow-hidden lg:h-[97vh] flex justify-center flex-col items-center bg-[#08051F] lg:relative pt-10"
+            >
               <div className="flex flex-col w-full">
                 <div className="flex flex-col gap-5 lg:my-[2.7rem] w-[90%] lg:w-auto mx-auto">
                   <h1 className="font-semibold uppercase lg:text-7xl text-5xl">
@@ -227,7 +228,10 @@ function App() {
               <div className="absolute h-[100px] w-[100px] circle2 top-[13rem] right-[18rem] rounded-full lg:inline-block hidden"></div>
             </div>
             {/* Archive Page */}
-            <div id="archive" className="child flex bg-[#08051F] min-w-[100%] lg:overflow-hidden lg:relative pt-24">
+            <div
+              id="archive"
+              className="child flex bg-[#08051F] min-w-[100%] lg:overflow-hidden lg:relative pt-24"
+            >
               <div className="text-white uppercase flex lg:flex-row flex-col items-center justify-center mx-auto w-[90%] mt-[-2rem]">
                 <div className="flex flex-col lg:w-[70%] gap-3 z-[1]">
                   <div className="flex flex-col justify-center items-start gap-4">
@@ -353,7 +357,10 @@ function App() {
               <div className="absolute circle6 w-[6rem] h-[6rem] rounded-full right-[4rem] bottom-[-4rem] lg:inline-block hidden"></div>
             </div>
             {/* Achievements Page */}
-            <div id="achievements" className="child flex bg-[#08051F] lg:overflow-hidden min-w-[100%] pt-24 lg:relative">
+            <div
+              id="achievements"
+              className="child flex bg-[#08051F] lg:overflow-hidden min-w-[100%] pt-24 lg:relative"
+            >
               <div className="text-white uppercase flex lg:flex-row flex-col justify-center w-[90%] mx-auto">
                 <div className="flex flex-col justify-center lg:w-[50%] gap-6">
                   <h1 className="lg:text-md text-sm">
@@ -429,7 +436,10 @@ function App() {
               <div className="absolute h-[100px] w-[100px] circle2 top-[34rem] left-[28rem] rounded-full lg:inline-block hidden"></div>
             </div>
             {/* Events Page */}
-            <div id="events" className="child flex bg-[#08051F] lg:overflow-hidden min-w-[100%] pt-24 lg:relative">
+            <div
+              id="events"
+              className="child flex bg-[#08051F] lg:overflow-hidden min-w-[100%] pt-24 lg:relative"
+            >
               <div className="text-white uppercase flex lg:flex-row flex-col justify-center w-[90%] mx-auto">
                 <div className="flex flex-col justify-center lg:w-[50%] gap-6">
                   <h1 className="lg:text-md text-sm">
@@ -481,7 +491,10 @@ function App() {
               <div className="absolute circle6 w-[6rem] h-[6rem] rounded-full right-[4rem] bottom-[-2.7rem] lg:inline-block hidden"></div>
             </div>
             {/* Contact Us */}
-            <div id="contact-us" className="child bg-[#08051F] lg:min-w-[100%] w-full lg:overflow-hidden lg:relative lg:mt-20 mt-8">
+            <div
+              id="contact-us"
+              className="child bg-[#08051F] lg:min-w-[100%] w-full lg:overflow-hidden lg:relative lg:mt-20 mt-8"
+            >
               <div className="flex lg:flex-row flex-col justify-center items-center w-[90%] mx-auto text-white uppercase lg:pt-10">
                 <div className="flex flex-col font-semibold gap-3 z-[1] lg:mb-0 mb-8">
                   <div className="flex flex-col gap-3">
