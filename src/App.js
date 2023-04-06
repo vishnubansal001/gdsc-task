@@ -53,37 +53,37 @@ function App() {
                 </div>
                 <div className="flex flex-rox items-center justify-center gap-4 uppercase text-[rgba(255,255,255,0.5)]">
                   <div className="">
-                    <div className="mb-1 cursor-pointer select-none">home</div>
+                    <div className="mb-1 cursor-pointer select-none hover:text-white">home</div>
                   </div>
                   <div className="">
-                    <div className="mb-1 cursor-pointer select-none">
+                    <div className="mb-1 cursor-pointer select-none hover:text-white">
                       about us
                     </div>
                   </div>
                   <div className="">
-                    <div className="mb-1 cursor-pointer select-none">
+                    <div className="mb-1 cursor-pointer select-none hover:text-white">
                       archive
                     </div>
                   </div>
                   <div className="">
-                    <div className="mb-1 cursor-pointer select-none">
+                    <div className="mb-1 cursor-pointer select-none hover:text-white">
                       achievements
                     </div>
                   </div>
                   <div className="">
-                    <div className="mb-1 cursor-pointer select-none">
+                    <div className="mb-1 cursor-pointer select-none hover:text-white">
                       events
                     </div>
                   </div>
                   <div className="">
-                    <div className="mb-1 cursor-pointer select-none">
+                    <div className="mb-1 cursor-pointer select-none hover:text-white">
                       contact us
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="border border-[10px_solid_white] px-[24px] py-[10px] cursor-pointer z-10">
-                <div className="text-white uppercase">explore more</div>
+              <div className="border border-[10px_solid_white] text-white btn hover:text-black px-[24px] py-[10px] cursor-pointer z-10">
+                <div className="uppercase">explore more</div>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@ function App() {
                     student chapter
                   </h1>
                   <div className="border-b border-b-[2px_solid_white] w-[15%]"></div>
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 hover:gap-8 cursor-pointer transition ease-in-out duration-500">
                     <div className="uppercase ">learn more</div>
                     <img src={arrow} alt="" className="h-6" />
                   </div>
@@ -152,16 +152,16 @@ function App() {
                 <div className="flex lg:flex-row flex-col justify-between w-[90%] mx-auto mt-10 lg:gap-0 gap-6">
                   <div className="w-[95%] flex">
                     <div className="flex flex-col gap-2 z-10 font-bold archive">
-                      <img src={twiter} alt="twitter" className="h-[1.25rem]" />
+                      <img src={twiter} alt="twitter" className="h-[1.25rem] social" />
                       <img
                         src={insta}
                         alt="instagram"
-                        className="h-[1.25rem]"
+                        className="h-[1.25rem] social"
                       />
                       <img
                         src={linkdin}
                         alt="linkedin"
-                        className="h-[1.25rem]"
+                        className="h-[1.25rem] social"
                       />
                       <div className="border-l-[2px] h-[30px] border-l-[5px_solid_white] ml-[8px]"></div>
                     </div>
@@ -169,9 +169,9 @@ function App() {
                     <div className="flex flex-row gap-4 lg:mb-0 mb-8 lg:hidden">
                       <div className="border-t mt-[0.68rem] w-[30%] border-t-[1px_solid_white]"></div>
                       <div className="flex gap-2">
-                        <img src={linkdin} alt="img/linkding.svg" />
-                        <img src={insta} alt="img/insta.svg" />
-                        <img src={twiter} alt="img/twiter.svg" />
+                        <img src={linkdin} alt="img/linkding.svg" className=" social"/>
+                        <img src={insta} alt="img/insta.svg" className=" social"/>
+                        <img src={twiter} alt="img/twiter.svg" className=" social"/>
                       </div>
                     </div>
                   </div>
@@ -310,9 +310,9 @@ function App() {
                   <div className="flex flex-row gap-4 lg:mb-0 mb-8">
                     <div className="border-t mt-[0.68rem] w-[10%] border-t-[1px_solid_white]"></div>
                     <div className="flex gap-2">
-                      <img src={linkdin} alt="img/linkding.svg" />
-                      <img src={insta} alt="img/insta.svg" />
-                      <img src={twiter} alt="img/twiter.svg" />
+                      <img src={linkdin} alt="img/linkding.svg" className=" social" />
+                      <img src={insta} alt="img/insta.svg" className=" social"/>
+                      <img src={twiter} alt="img/twiter.svg" className=" social" />
                     </div>
                   </div>
                 </div>
@@ -324,8 +324,8 @@ function App() {
                     <div className="flex md:flex-row flex-col justify-center gap-4">
                       <div className="flex flex-col gap-8">
                         <img src={kid} alt="img/kid.svg" />
-                        <div className="border border-[10px_solid_white] px-[24px] py-[10px] cursor-pointer mx-auto">
-                          <button className="uppercase lg:text-md text-xl">
+                        <div className="border btn border-[10px_solid_white] px-[24px] py-[10px] cursor-pointer mx-auto">
+                          <button className=" uppercase lg:text-md text-xl">
                             ai always win
                           </button>
                         </div>
@@ -376,7 +376,7 @@ function App() {
                           alt="img/kid.svg"
                           // className="lg:w-auto lg:h-auto w-[26rem]"
                         />
-                        <div className="border border-[10px_solid_white] px-[24px] py-[10px] cursor-pointer mx-auto">
+                        <div className="border btn border-[10px_solid_white] px-[24px] py-[10px] cursor-pointer mx-auto">
                           <button className="uppercase lg:text-md text-xl">
                             upcoming events
                           </button>
@@ -437,7 +437,7 @@ function App() {
                       className="lg:w-[90%] bg-transparent border outline-none focus:bg-transparent mb-2"
                     ></textarea>
                     <div className="flex flex-col lg:w-[90%] justify-center items-center">
-                      <button className="border py-[0.5rem] px-[3rem] uppercase">
+                      <button className="border btn py-[0.5rem] px-[3rem] uppercase">
                         send
                       </button>
                     </div>

@@ -86,3 +86,16 @@ body{
   visibility: hidden;
   transform: skewX(3deg) translateX(-100px);
 }
+
+.btn:hover{
+  background-color: white;
+  color: black;
+  transform: scale(1.025);
+  transition: all .9s ease-in-out;
+}
+
+.social:hover{
+  transform: scale(1.25);
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
