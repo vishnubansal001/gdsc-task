@@ -53,7 +53,9 @@ function App() {
                 </div>
                 <div className="flex flex-rox items-center justify-center gap-4 uppercase text-[rgba(255,255,255,0.5)]">
                   <div className="">
-                    <div className="mb-1 cursor-pointer select-none hover:text-white">home</div>
+                    <div className="mb-1 cursor-pointer select-none hover:text-white">
+                      home
+                    </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
@@ -152,7 +154,11 @@ function App() {
                 <div className="flex lg:flex-row flex-col justify-between w-[90%] mx-auto mt-10 lg:gap-0 gap-6">
                   <div className="w-[95%] flex">
                     <div className="flex flex-col gap-2 z-10 font-bold archive">
-                      <img src={twiter} alt="twitter" className="h-[1.25rem] social" />
+                      <img
+                        src={twiter}
+                        alt="twitter"
+                        className="h-[1.25rem] social"
+                      />
                       <img
                         src={insta}
                         alt="instagram"
@@ -169,9 +175,21 @@ function App() {
                     <div className="flex flex-row gap-4 lg:mb-0 mb-8 lg:hidden">
                       <div className="border-t mt-[0.68rem] w-[30%] border-t-[1px_solid_white]"></div>
                       <div className="flex gap-2">
-                        <img src={linkdin} alt="img/linkding.svg" className=" social"/>
-                        <img src={insta} alt="img/insta.svg" className=" social"/>
-                        <img src={twiter} alt="img/twiter.svg" className=" social"/>
+                        <img
+                          src={linkdin}
+                          alt="img/linkding.svg"
+                          className=" social"
+                        />
+                        <img
+                          src={insta}
+                          alt="img/insta.svg"
+                          className=" social"
+                        />
+                        <img
+                          src={twiter}
+                          alt="img/twiter.svg"
+                          className=" social"
+                        />
                       </div>
                     </div>
                   </div>
@@ -245,37 +263,65 @@ function App() {
                     >
                       <SwiperSlide>
                         <div className="flex items-center w-full h-full justify-center flex-col rounded-md border border-gray-500 p-4">
-                          <img src={advocate} alt="img/advocate.svg" className="w-[20rem] h-[20rem]" />
+                          <img
+                            src={advocate}
+                            alt="img/advocate.svg"
+                            className="w-[20rem] h-[20rem]"
+                          />
                         </div>
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="flex items-center w-full h-full justify-center flex-col rounded-md border border-gray-500 p-4">
-                          <img src={kid} alt="img/kid.svg" className="w-[20rem] h-[20rem]" />
+                          <img
+                            src={kid}
+                            alt="img/kid.svg"
+                            className="w-[20rem] h-[20rem]"
+                          />
                         </div>
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="flex items-center w-full h-full justify-center flex-col rounded-md border border-gray-500 p-4">
-                          <img src={stream} alt="img/stream.svg" className="w-[20rem] h-[20rem]" />
+                          <img
+                            src={stream}
+                            alt="img/stream.svg"
+                            className="w-[20rem] h-[20rem]"
+                          />
                         </div>
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="flex items-center w-full h-full justify-center flex-col rounded-md border border-gray-500 p-4">
-                          <img src={gaming} alt="img/gaming.svg" className="w-[20rem] h-[20rem]" />
+                          <img
+                            src={gaming}
+                            alt="img/gaming.svg"
+                            className="w-[20rem] h-[20rem]"
+                          />
                         </div>
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="flex items-center w-full h-full justify-center flex-col rounded-md border border-gray-500 p-4">
-                          <img src={lab} alt="img/lab.svg" className="w-[20rem] h-[20rem]" />
+                          <img
+                            src={lab}
+                            alt="img/lab.svg"
+                            className="w-[20rem] h-[20rem]"
+                          />
                         </div>
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="flex items-center w-full h-full justify-center flex-col rounded-md border border-gray-500 p-4">
-                          <img src={laptop} alt="img/laptop.svg" className="w-[20rem] h-[20rem]" />
+                          <img
+                            src={laptop}
+                            alt="img/laptop.svg"
+                            className="w-[20rem] h-[20rem]"
+                          />
                         </div>
                       </SwiperSlide>
                       <SwiperSlide>
                         <div className="flex items-center w-full h-full justify-center flex-col rounded-md border border-gray-500 p-4">
-                          <img src={hand} alt="ing/hand.svg" className="w-[20rem] h-[20rem]" />
+                          <img
+                            src={hand}
+                            alt="ing/hand.svg"
+                            className="w-[20rem] h-[20rem]"
+                          />
                         </div>
                       </SwiperSlide>
                     </Swiper>
@@ -310,9 +356,21 @@ function App() {
                   <div className="flex flex-row gap-4 lg:mb-0 mb-8">
                     <div className="border-t mt-[0.68rem] w-[10%] border-t-[1px_solid_white]"></div>
                     <div className="flex gap-2">
-                      <img src={linkdin} alt="img/linkding.svg" className=" social" />
-                      <img src={insta} alt="img/insta.svg" className=" social"/>
-                      <img src={twiter} alt="img/twiter.svg" className=" social" />
+                      <img
+                        src={linkdin}
+                        alt="img/linkding.svg"
+                        className=" social"
+                      />
+                      <img
+                        src={insta}
+                        alt="img/insta.svg"
+                        className=" social"
+                      />
+                      <img
+                        src={twiter}
+                        alt="img/twiter.svg"
+                        className=" social"
+                      />
                     </div>
                   </div>
                 </div>
