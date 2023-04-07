@@ -487,8 +487,8 @@ function App() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </h1>
                   <div className="flex flex-col gap-3">
-                    <h1 className="lg:text-6xl text-5xl">mechbots clubs</h1>
-                    <h1 className="lg:text-6xl text-5xl">achievements</h1>
+                    <h1 className="lg:text-6xl text-4xl">mechbots clubs</h1>
+                    <h1 className="lg:text-6xl text-4xl">achievements</h1>
                   </div>
                   <div className="flex flex-row gap-4 mb-4">
                     <div className="border-l border-l-[1px_solid_white]"></div>
@@ -567,8 +567,8 @@ function App() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   </h1>
                   <div className="flex flex-col gap-3">
-                    <h1 className="lg:text-6xl text-5xl">robotics & ai</h1>
-                    <h1 className="lg:text-6xl text-5xl">Workshops</h1>
+                    <h1 className="lg:text-6xl text-4xl">robotics & ai</h1>
+                    <h1 className="lg:text-6xl text-4xl">Workshops</h1>
                   </div>
                   <div className="flex flex-row gap-4 mb-4">
                     <div className="border-l border-l-[1px_solid_white] "></div>
