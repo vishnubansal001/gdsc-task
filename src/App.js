@@ -29,7 +29,7 @@ import { gsap, TweenMax } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { HashLink } from "react-router-hash-link";
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 function App() {
   // Swiper Code for the pagination, navigation, and autoplay
   SwiperCore.use([Autoplay, Navigation, Pagination]);
@@ -37,6 +37,105 @@ function App() {
   // Code for the Responsiveness of the Navbar
   const [popupState, setPopupState] = useState(false);
   const onTriggerPopup = () => setPopupState(!popupState);
+
+  // let cursor = useRef(null)
+  // let posX1 = useRef(null)
+  // let posY1 = useRef(null)
+  // let mouseX1 = useRef(null)
+  // let mouseY1 = useRef(null)
+
+  // let tl = gsap.timeline();
+  // let tl2 = gsap.timeline();
+
+  // useEffect(() => {
+  //   let posX = posX1.current;
+  //   let posY = posY1.current;
+  //   let mouseX = mouseX1.current;
+  //   let mouseY = mouseY1.current;
+  //   tl.to({} , 0.016, {
+  //     repeat: -1,
+  //     onRepeat: function(){
+  //       posX += (mouseX - posX) / 10;
+  //       posY += (mouseY - posY) / 10;
+  //       tl.set(cursor, {
+  //         css: {
+  //           left: posX - 50,
+  //           top: posY - 50,
+  //         },
+  //       });
+  //     }
+  //   })
+  //   document.addEventListener("mousemove", function(e){
+  //     mouseX = e.pageX;
+  //     mouseY = e.pageY;
+  //   })
+  //   tl2.from(cursor, {
+  //     duration: 1.5,
+  //     delay: 2,
+  //     opacity: 0
+  //   }, "-=1")
+  // },[])
+
+  // useEffect(() => {
+  //   const container = document.querySelector(".wrapper");
+
+  //   const handleResize = () => {
+  //     if (window.innerWidth > 800) {
+  //       container.classList.add("container1");
+  //     } else {
+  //       container.classList.remove("container1");
+  //     }
+  //   };
+
+  //   handleResize(); // check initial screen size on component mount
+
+  //   window.addEventListener("resize", handleResize); // listen for changes in screen size
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize); // clean up event listener on unmount
+  //   };
+  // }, []);
+
+  // React.useEffect(() => {
+  //   const mq = window.matchMedia("(max-width: 768px)");
+  //   if(mq.matches){
+
+  //   }
+  //   else {
+  //     const container = document.querySelector(".container1");
+  //     const sections = gsap.utils.toArray(".child");
+
+  //     let scrollTween = gsap.to(sections, {
+  //       xPercent: -100 * (sections.length - 1),
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         trigger: ".container1",
+  //         pin: true,
+  //         scrub: 1,
+  //         end: "+=3000",
+  //       },
+  //     });
+
+  //     return () => {
+  //       // clean up ScrollTrigger on unmount
+  //       scrollTween.kill();
+  //       // ScrollTrigger.getById("containerPin").kill();
+  //     };
+  //     // })
+  //   }
+  // }, []);
+
+  const landingPage = useRef(null);
+  const aboutUsPage = useRef(null);
+  const archivePage = useRef(null);
+  const achievementPage = useRef(null);
+  const eventsPage = useRef(null);
+  const contactUsPage = useRef(null);
+
+  const handleLinkClick = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       {/* Navbar For large screens */}
@@ -56,33 +155,51 @@ function App() {
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
                       {/* <HashLink to="#landing-page"> */}
-                      <a href="#landing-page">home</a>
+                      <a href="#" onClick={() => handleLinkClick(landingPage)}>
+                        home
+                      </a>
                       {/* </HashLink> */}
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                      <a href="#about-us">about us</a>
+                      <a href="#" onClick={() => handleLinkClick(aboutUsPage)}>
+                        about us
+                      </a>
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                      <a href="#archive">archive</a>
+                      <a href="#" onClick={() => handleLinkClick(archivePage)}>
+                        archive
+                      </a>
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                      <a href="#achievements">achievements</a>
+                      <a
+                        href="#"
+                        onClick={() => handleLinkClick(achievementPage)}
+                      >
+                        achievements
+                      </a>
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                      <a href="#events">events</a>
+                      <a href="#" onClick={() => handleLinkClick(eventsPage)}>
+                        events
+                      </a>
                     </div>
                   </div>
                   <div className="">
                     <div className="mb-1 cursor-pointer select-none hover:text-white">
-                      <a href="#contact-us">contact us</a>
+                      <a
+                        href="#"
+                        onClick={() => handleLinkClick(contactUsPage)}
+                      >
+                        contact us
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -149,10 +266,11 @@ function App() {
       <section>
         {/* Horizontal Scroller for large screens */}
         <div>
-          <div className="lg:flex relative lg:flex-row wrapper">
+          <div className="wrapper lg:flex relative lg:flex-row wrapper">
             {/* Landing Page */}
             <div
               id="landing-page"
+              ref={landingPage}
               className="child min-w-[100%] lg:mt-4 text-white lg:overflow-hidden lg:h-[97vh] flex justify-center flex-col items-center bg-[#08051F] lg:relative pt-10"
             >
               <div className="flex flex-col w-full">
@@ -230,6 +348,7 @@ function App() {
             {/* Archive Page */}
             <div
               id="archive"
+              ref={archivePage}
               className="child flex bg-[#08051F] min-w-[100%] lg:overflow-hidden lg:relative pt-24"
             >
               <div className="text-white uppercase flex lg:flex-row flex-col items-center justify-center mx-auto w-[90%] mt-[-2rem]">
@@ -359,6 +478,7 @@ function App() {
             {/* Achievements Page */}
             <div
               id="achievements"
+              ref={achievementPage}
               className="child flex bg-[#08051F] lg:overflow-hidden min-w-[100%] pt-24 lg:relative"
             >
               <div className="text-white uppercase flex lg:flex-row flex-col justify-center w-[90%] mx-auto">
@@ -438,6 +558,7 @@ function App() {
             {/* Events Page */}
             <div
               id="events"
+              ref={eventsPage}
               className="child flex bg-[#08051F] lg:overflow-hidden min-w-[100%] pt-24 lg:relative"
             >
               <div className="text-white uppercase flex lg:flex-row flex-col justify-center w-[90%] mx-auto">
@@ -493,6 +614,7 @@ function App() {
             {/* Contact Us */}
             <div
               id="contact-us"
+              ref={contactUsPage}
               className="child bg-[#08051F] lg:min-w-[100%] w-full lg:overflow-hidden lg:relative lg:mt-20 mt-8"
             >
               <div className="flex lg:flex-row flex-col justify-center items-center w-[90%] mx-auto text-white uppercase lg:pt-10">
@@ -543,6 +665,7 @@ function App() {
           </div>
         </div>
       </section>
+      {/* <div className="cursor-follower" ref={ el => cursor = el }></div> */}
     </>
   );
 }

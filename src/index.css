@@ -112,3 +112,36 @@ h1{
 .img:hover{
   cursor: pointer;
 }
+
+/* @media (max-width: 768px) {
+  .cursor-follower{
+    display: none;
+  }
+} */
+/* 
+.cursor-follower{
+  position: absolute;
+  /* background: url(Assets/Red_asterisk.svg) no-repeat 50% 50% ;
+  background-size: cover; */
+  /* background: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  animation: animate-rotate 10s infinite linear;
+  z-index: 1500;
+  user-select: none;
+  opacity: 1;
+  mix-blend-mode: multiply;
+  overflow: hidden;
+  pointer-events: none; */
+  /* transform: translate(35px, 35px); */
+/* }
+@keyframes animate-rotate {
+  to{
+    transform: rotate(0deg);
+  }
+  from{
+    transform: rotate(360deg);
+  }
+} */ 
